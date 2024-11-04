@@ -48,6 +48,11 @@ Aplicação com Django e Django-Rest-Framework + React
 `para usar variaveis de ambient`
 - pip install python-dotenv
 
+- configs para testar ADMIN DJANGO
+admin
+admin@contato.com
+Admin$5000
+
 
 #### React
 
