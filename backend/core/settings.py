@@ -31,12 +31,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django-restframework',
+    'rest_framework',
     'corsheaders',
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middlleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -51,7 +51,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/'build'],
+        'DIRS': [BASE_DIR/'dist'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-BR'
 
-TIME_ZONE = 'AMERICA/Recife'
+TIME_ZONE = 'America/Recife'
 
 USE_I18N = True
 
@@ -125,8 +125,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS= [BASE_DIR/'build/static']
-STATIC_ROOT= BASE_DIR/'static'
+STATICFILES_DIRS= [BASE_DIR/'dist/assets']
+STATIC_ROOT= BASE_DIR / 'static'
 CORS_ORIGIN_ALLOW_ALL=True
 
 
