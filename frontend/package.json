@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
 
-    "build":"rm -rf ../backend/build && react-scripts build && cp -r build ../backend/build && rm -rf build",
-    
+    "build":"rm -rf ../backend/dist && vite build && cp -r dist ../backend/dist && rm -rf dist",
+
     "lint": "eslint .",
     "preview": "vite preview"
   },
