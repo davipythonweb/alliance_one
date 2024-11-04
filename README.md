@@ -88,3 +88,15 @@ ____________________________
 * gerar arquivos finais para subir no servidor
 `npm run build`
 
+
+- detro de package.json
+
+- "build": "rm -rf ../backend/dist && vite build && mkdir -p ../backend/dist/static && cp -r dist/assets ../backend/dist/static && cp dist/index.html ../backend/dist && rm -rf dist",
+
+* Explicação===>
+
+- O comando vite build cria a pasta dist com os arquivos gerados.
+- mkdir -p ../backend/dist/static cria a pasta static dentro do backend, onde os arquivos JavaScript e CSS serão colocados.
+- cp -r dist/assets ../backend/dist/static copia a pasta assets para dentro de static.
+- cp dist/index.html ../backend/dist copia o index.html para a pasta dist do backend.
+- rm -rf dist remove a pasta temporária dist após a cópia.
